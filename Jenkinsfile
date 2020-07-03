@@ -11,8 +11,8 @@ pipeline {
     stages {
         stage('Build') { 
             steps {
-                // sh 'mvn -B -DskipTests clean package' 
-                sh 'mvn assembly:assembly'
+                sh 'mvn -B -DskipTests clean package' 
+                //sh 'mvn assembly:assembly'
             }
         }
         stage('Test') {
